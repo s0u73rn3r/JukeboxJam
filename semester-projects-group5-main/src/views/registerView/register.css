@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../../assets/appImages/loginbackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    background-color: #1a1c2b;
+    font-family: 'Arial';
+    align-content: center;
+}
+
+.register {
+    width: 382px;
+    overflow: hidden;
+    margin: auto;
+    margin: 20 0 0 450px;
+    padding: 80px;
+    background: #183852;
+    border-radius: 15px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+label {
+    color: #fe667d;
+    font-size: 17px;
+    align-items: center;
+}
+
+#Uname {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+
+#Pass {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+
+#ConfirmPass {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+
+#confirm {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: #183852;
+}
+
+span {
+    color: white;
+    font-size: 17px;
+}
+
+
+/* #confirm{
+    background-color: white;
+    color: #183852;
+    font-size: 17px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+} */
+
+a:link,
+a:visited {
+    background-color: white;
+    color: #183852;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    opacity: 50%;
+}

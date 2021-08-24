@@ -1,0 +1,271 @@
+:root {
+    --button-height: 1rem;
+    --button-color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://wallpaperaccess.com/full/2344997.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1a1c2b;
+    font-family: 'Arial';
+}
+
+.musicBlock {
+    width: 382px;
+    overflow: hidden;
+    margin: auto;
+    margin: 20 0 0 450px;
+    padding: 80px;
+    background: #183852;
+    border-radius: 15px;
+}
+
+.song-list {
+    width: 70%;
+    margin: 50px auto;
+}
+
+.song {
+    text-decoration: none;
+    margin: 10px;
+    list-style-type: none;
+    color: white;
+    background: #051624;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.song:hover {
+    cursor: pointer;
+}
+
+.player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.1rem;
+    height: 1.1rem;
+    padding: 1rem;
+    border: 0.2rem solid var(--button-color);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 3.1rem rgba(255, 255, 255, 0.8));
+}
+
+.play {
+    height: 0;
+    width: 0;
+    margin-left: calc(2 * 0.14 * var(--button-height));
+    background: none;
+    border: none;
+    border-top: var(--button-height) solid transparent;
+    border-bottom: var(--button-height) solid transparent;
+    border-left: calc(var(--button-height) * 2 * 0.86) solid var(--button-color);
+}
+
+.pause {
+    position: relative;
+    background: none;
+    border: none;
+    height: calc(var(--button-height) * 2);
+    width: calc(var(--button-height) * 2 * 0.86);
+}
+
+.pause:before,
+.pause:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 33%;
+    background: var(--button-color);
+}
+
+.pause:before {
+    left: 0;
+}
+
+.pause:after {
+    right: 0;
+}
+#room-title{
+    text-shadow: 6px 6px 10px rgb(0, 0, 0);
+}
+#add-songs{
+    border: none;
+    display: block;
+    width: 180px;
+    padding: 14px;
+    color: #f5f5f5;
+    background-color: rgb(92,184,92);
+    font-size: 1.4em;
+    cursor: pointer;
+    border-radius: 0.27em;
+    box-shadow: 0px 5px 24px rgba(34, 34, 34, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Lato", sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    text-shadow: 1px 1px 5px rgb(87, 84, 84);
+    position: absolute;
+    bottom: 17.7rem;
+    right: 0;
+    left: 0;
+}
+#close-listening-room{
+    border: none;
+    display: block;
+    width: 180px;
+    padding: 14px;
+    color: #f5f5f5;
+    background-color: rgb(217,83,79);
+    font-size: 1.4em;
+    cursor: pointer;
+    border-radius: 0.27em;
+    box-shadow: 0px 5px 24px rgba(34, 34, 34, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Lato", sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    text-shadow: 1px 1px 5px rgb(87, 84, 84);
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+
+
+#close {
+    border: none;
+    background: #e41f50;
+    color: white;
+    border-radius: 0.27em;
+    padding: 15px;
+    cursor: ponter;
+}
+
+#add-song {
+    border: none;
+    display: inline;
+    margin: 5px;
+    padding: 15px;
+    color: white;
+    background: #00BFFF;
+    border-radius: 0.27em;
+}
+
+.hidden {
+    display: none;
+}
+
+.controlContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.musicControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.3rem;
+    height: 2.3rem;
+    padding: 1rem;
+    filter: drop-shadow(0 0 3.1rem rgba(255, 255, 255, 0.8));
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+label {
+    color: #fe667d;
+    font-size: 17px;
+    align-items: center;
+}
+
+span {
+    color: white;
+    font-size: 17px;
+}
+
+a:link,
+a:visited {
+    background-color: white;
+    color: #183852;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    opacity: 50%;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #183852;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border-radius: 0.27em;
+    width: 60%;
+    /* Could be more or less, depending on screen size */
+}
+
+#song-list {
+    width: 60%;
+    margin: auto;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

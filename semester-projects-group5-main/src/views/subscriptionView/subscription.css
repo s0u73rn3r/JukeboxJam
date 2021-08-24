@@ -1,0 +1,47 @@
+body{
+    margin: 0;  
+    padding: 0;  
+    background-image: url("../../assets/appImages/loginbackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1a1c2b;  
+    font-family: 'Arial';  
+}
+
+#main-container{
+    width: 600px; 
+    background: #183852;
+    border-radius: 15px; 
+    margin: auto; 
+    overflow: hidden;
+    position: relative;
+    top: 3rem;
+}
+
+#main-container #left-container{
+    float: left; 
+}
+
+#main-container #right-container{
+    float: right;  
+}
+
+.column-container{
+    color: white; 
+    height: 100%; 
+    width: 300px; 
+    padding: 20px 0; 
+    text-align: center;
+}
+
+.subscriptionBtn{
+    border: none; 
+    border-radius: 15px; 
+    height: 30px; 
+    width: 75px; 
+}
+
+h3{
+    color: #fe667d;
+    margin-top: 0; 
+}

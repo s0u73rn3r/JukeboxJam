@@ -1,0 +1,66 @@
+{
+    "name": "jukeboxjam",
+    "productName": "jukeboxjam",
+    "version": "1.0.0",
+    "description": "My Electron application description",
+    "main": "src/main.js",
+    "scripts": {
+        "start": "electron-forge start",
+        "package": "electron-forge package",
+        "make": "electron-forge make",
+        "publish": "electron-forge publish",
+        "lint": "echo \"No linting configured\"",
+        "test": "mocha -r esm --exit"
+    },
+    "keywords": [],
+    "author": {
+        "name": "Dylan Morris",
+        "email": "drm54@students.uwf.edu"
+    },
+    "license": "MIT",
+    "config": {
+        "forge": {
+            "packagerConfig": {},
+            "makers": [
+                {
+                    "name": "@electron-forge/maker-squirrel",
+                    "config": {
+                        "name": "jukeboxjam"
+                    }
+                },
+                {
+                    "name": "@electron-forge/maker-zip",
+                    "platforms": [
+                        "darwin"
+                    ]
+                },
+                {
+                    "name": "@electron-forge/maker-deb",
+                    "config": {}
+                },
+                {
+                    "name": "@electron-forge/maker-rpm",
+                    "config": {}
+                }
+            ]
+        }
+    },
+    "dependencies": {
+        "electron-settings": "^4.0.2",
+        "electron-squirrel-startup": "^1.0.0",
+        "express": "^4.17.1",
+        "howler": "^2.2.1",
+        "mongodb": "^3.6.4"
+    },
+    "devDependencies": {
+        "@electron-forge/cli": "^6.0.0-beta.54",
+        "@electron-forge/maker-deb": "^6.0.0-beta.54",
+        "@electron-forge/maker-rpm": "^6.0.0-beta.54",
+        "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
+        "@electron-forge/maker-zip": "^6.0.0-beta.54",
+        "electron": "^12.0.1",
+        "esm": "^3.2.25",
+        "mocha": "^8.3.2",
+        "spectron": "^14.0.0"
+    }
+}

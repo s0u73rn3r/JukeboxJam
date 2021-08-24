@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Input Your Payment</title>
+        <link rel="stylesheet" href="payment.css">
+        <script type="module" src="../../js/paymentScript.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="main-container">
+
+            <h2>Payment Information</h2>
+
+            <form action="post">
+
+                <label for="name-on-card">Name on Card: </label>
+                <input type="text" id="name-on-card" name="name-on-card"> 
+                <br>
+
+                <label for="card-number">Card Number: </label>
+                <input type="text" id="card-number" name="card-number">
+                <br>
+
+                <label for="expiration-date">Expiration Date: (MM/YY) </label>
+                <input type="text" id="expiration-date" name="expiration-date">
+                <br>
+
+                <label for="card--security-code">CSC :</label>
+                <input type="text" id="card-security-code" name="card-security-code">
+                <br>
+
+                <button class="formBtn" id="cancelBtn" type="button">Cancel</button>
+                <button class="formBtn" id="submitBtn" type="submit">Submit Payment</button>
+
+                <div class="clearfix"></div>
+            
+            </form>
+
+        </div>  
+        
+    </body>
+
+</html>

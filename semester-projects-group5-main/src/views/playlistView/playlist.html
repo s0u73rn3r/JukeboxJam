@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Playlist</title>
+    <link rel="stylesheet" type="text/css" href="playlist.css">
+    
+</head>
+
+<h2>Example Playlist</h2>
+
+<body>
+    <div class="playlist-btns">
+        <button class="btn-back " id="back">Back</button>
+        <button class="btn btn-success" id="add">Add Song</button>
+    </div>
+
+    <div class="musicBlock">
+        <label><b>Song: <span id="title"></span>
+            </b>
+        </label>
+        <br><br>
+        <div class="controlContainer">
+            <input type="image" id="howler-prev" src="../../assets/appImages/rewind.png" class="musicControls">
+            <input type="image" src="../../assets/appImages/voldownButton.svg" class="musicControls"
+                name="howler-voldown" id="howler-voldown" title="Volume Down" />
+            <div class="player">
+                <input type="image" src="../../assets/appImages/playButton.svg" class="play" name="howler-play"
+                    id="howler-play" title="Play" />
+                <input type="image" src="../../assets/appImages/pauseButton.svg" class="pause hidden"
+                    name="howler-pause" id="howler-pause" title="Pause" />
+            </div>
+            <input type="image" src="../../assets/appImages/volupButton.svg" class="musicControls" name="howler-volup"
+                id="howler-volup" title="Volume Up" />
+
+            <input type="image" id="howler-next" src="../../assets/appImages/fast-forward.png" class="musicControls" />
+        </div>
+
+        <script type="module" src="../../js/musicScript.js"></script>
+        <script type="module" src="../../js/playlistScript.js"></script>
+    </div>
+    <div class="song-list">
+        <ul id="songs">
+
+        </ul>
+    </div>
+</body>
+
+</html>

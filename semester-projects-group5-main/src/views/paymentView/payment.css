@@ -1,0 +1,58 @@
+body{
+    margin: 0;  
+    padding: 0;  
+    background-image: url("../../assets/appImages/loginbackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1a1c2b;  
+    font-family: 'Arial';  
+}
+
+#main-container{
+    width: 450px; 
+    background: #183852; 
+    color: white;
+    border-radius: 15px; 
+    margin: auto; 
+    overflow: hidden;
+    position: relative;
+    top: 3rem;
+}
+
+.formBtn{
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+    width: 150px;
+}
+
+#cancelBtn{
+    float:left;
+}
+
+#submitBtn{
+    float:right;
+}
+
+h2{
+    color: #ff667d;
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+form{
+    padding: 20px;
+}
+
+input{
+    margin-bottom: 20px;
+}
+
+.clearfix:after{
+    content: ""; 
+    visibility: hidden;
+    display: block; 
+    height: 0;
+    clear: both;
+}
